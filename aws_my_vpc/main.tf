@@ -7,7 +7,7 @@ terraform {
             version                 = "~> 3.27"
         }
     }
-  required_version = ">= 0.12"
+  required_version                  = ">= 0.12"
 }
 
 
@@ -20,5 +20,5 @@ provider "aws" {
 # vpc resource creation in Ohio region
 
 resource "aws_vpc" "aws_my_vpc" {
-    cidr_block                      = "10.10.0.0/24"
+    cidr_block                      = "10.10.0.0/16"
 }
