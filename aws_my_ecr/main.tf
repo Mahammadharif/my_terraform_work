@@ -31,7 +31,8 @@ resource "aws_ecr_repository" "my_test_ecr_repo" {
     }
 
     encryption_configuration {
-        encryption_type     = "AES256"
+        encryption_type     = "KMS"
+        kms_key             = "arn:aws:kms:us-east-2:664782113447:key/db88351f-ffd7-4c77-be99-2f6c6353b47f"   # KMS key ARN here 
     }
 
 
